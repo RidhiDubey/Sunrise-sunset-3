@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var backgroundImg;
-var time;
+
 var bg = "sunrise1.png";
 
 function preload() {
@@ -47,7 +47,7 @@ async function getBackgroundImg(){
     
     // write code to slice the datetime
     var hour = datetime.slice(11,13);
-
+      var time=datetime.slice(14,16);
     // add conditions to change the background images from sunrise to sunset
     if(hour>=04 && hour<=06){
         bg="sunrise1.png";
