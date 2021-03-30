@@ -24,10 +24,7 @@ function draw(){
     // add condition to check if any background image is there to add
     if(backgroundImg)
     background(backgroundImg);
-    fill(225);
-    textSize(25);
-    text("Time:"+time,100,50);
-    Engine.update(engine);
+    
 
     // write code to display time in correct format here
       
@@ -41,7 +38,7 @@ async function getBackgroundImg(){
     var response=await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJSON=await response.json();
     var datetime = responseJSON.datetime;
-    var time=datetime.slice(11,16)
+    
     //change the data in JSON format
     var datetime = responseJSON.datetime;
     
