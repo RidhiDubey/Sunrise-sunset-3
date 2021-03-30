@@ -24,13 +24,13 @@ function draw(){
     // add condition to check if any background image is there to add
     if(backgroundImg)
     background(backgroundImg);
-    fill(225);
+    
+
+    // write code to display time in correct format here
+      fill(225);
     textSize(25);
     text("Time:"+time,100,50);
     Engine.update(engine);
-
-    // write code to display time in correct format here
-
 
 }
 
